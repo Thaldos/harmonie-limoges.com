@@ -1,0 +1,14 @@
+{
+    "name": "thaldos/harmonie-limoges",
+    "autoload": {
+        "psr-4": {
+            "Thaldos\\HarmonieLimoges\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vincent Godé"
+        }
+    ],
+    "require": {}
+}
