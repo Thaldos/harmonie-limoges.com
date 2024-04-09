@@ -20,6 +20,6 @@ class MailsService
         $messageHtml = '<html><body>';
         $messageHtml .= $message;
         $messageHtml .= '</body></html>';
-        mail("test@gmail.com", 'Raspberry garden watering notification', $messageHtml, $headers);
+        mail("vincent.oliver@wanadoo.fr", 'Harmonie Limoges - Nouvel évènement', $messageHtml, $headers);
     }
 }

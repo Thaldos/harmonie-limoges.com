@@ -1,14 +1,21 @@
 <?php
-
+use Dotenv\Dotenv;
 use Thaldos\HarmonieLimoges\Controllers\IndexController;
 
 require 'vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
+$isDebugMode = $_ENV['IS_DEBUG_MODE'] ?? false;
+if ($isDebugMode) {
+    \ini_set('display_errors', 1);
+    \ini_set('display_startup_errors', 1);
+    \error_reporting(E_ALL);
+}
+
 $indexController = new IndexController();
-$indexController->indexAction();
+// $indexController->indexAction();
 ?>
 
 <!DOCTYPE html>
@@ -87,7 +94,6 @@ $indexController->indexAction();
         </div>
     </section>
     <!-- /navigation -->
-
     <!-- hero area -->
     <section class="hero-section hero" data-background=""
         style="background-image: url(dtox-1.0/images/hero-area/banner-bg.png);">
@@ -123,7 +129,6 @@ $indexController->indexAction();
         </div>
     </section>
     <!-- /hero-area -->
-
     <!-- feature -->
     <section class="section feature mb-0" id="feature">
         <div class="container">
@@ -191,7 +196,6 @@ $indexController->indexAction();
         <img class="feature-bg-2 left-right-animation" src="dtox-1.0/images/background-shape/feature-bg-2.png" alt="bg-shape">
     </section>
     <!-- /feature -->
-
     <!-- marketing -->
     <section class="section-lg seo">
         <div class="container">
@@ -220,7 +224,6 @@ $indexController->indexAction();
         <img class="seo-bg-shape-3 left-right-animation" src="dtox-1.0/images/background-shape/seo-ball-2.png" alt="bg-shape">
     </section>
     <!-- /marketing -->
-
     <!-- service -->
     <section class="section-lg service">
         <div class="container">
@@ -252,7 +255,6 @@ $indexController->indexAction();
             alt="background-shape">
     </section>
     <!-- /service -->
-
     <!-- team -->
     <section class="section-lg team" id="team">
         <div class="container-fluid">
@@ -354,7 +356,6 @@ $indexController->indexAction();
             alt="background-shape">
     </section>
     <!-- /team -->
-
     <!-- pricing -->
     <section class="section-lg pb-0 pricing" id="pricing">
         <div class="container">
@@ -416,7 +417,6 @@ $indexController->indexAction();
             alt="background-shape">
     </section>
     <!-- /pricing -->
-
     <!-- client logo slider -->
     <section class="section">
         <div class="container">
@@ -444,7 +444,6 @@ $indexController->indexAction();
         </div>
     </section>
     <!-- /client logo slider -->
-
     <!-- newsletter -->
     <section class="newsletter">
         <div class="container">
