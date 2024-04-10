@@ -4,4 +4,9 @@
 
 .hero-section {
     padding-top: 200px !important;
+    margin-bottom: 0 !important;
+}
+
+.section {
+    padding-bottom: 0 !important;
 }

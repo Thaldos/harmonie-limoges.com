@@ -57,15 +57,15 @@ $indexController = new IndexController();
     <!-- navigation -->
     <section class="fixed-top navigation">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="/"><img src="images/harmonie_logo.png" alt="logo"></a>
                 <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar"
                     aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- navbar -->
-                <div class="collapse navbar-collapse text-center d-flex justify-content-center" id="navbar">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse text-center" id="navbar">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="/">Accueil<br><span class="nav-link-russian">Дом</span></a>
                         </li>
@@ -100,8 +100,6 @@ $indexController = new IndexController();
                             </div>
                         </form>
                     </div>
-                    <!-- banner image -->
-                    <img class="img-fluid w-100 banner-image" src="dtox-1.0/images/hero-area/banner-img.png" alt="banner-img">
                 </div>
             </div>
         </div>
@@ -129,7 +127,8 @@ $indexController = new IndexController();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-title">Awesome Features</h2>
+                    <h2>Qui sommes nous ?</h2>
+                    <h3>Кто мы ?</h3>
                     <p class="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                         fugiat nulla pariatur.<br>Excepteur sint occaecat cupidatat non proident</p>
                 </div>
